@@ -95,3 +95,7 @@ To watch it run headed instead (for example, to debug it yourself), drop `--head
 | `woocommerce-cart-checkout` | cart (four designs), checkout (three designs, slim header, express pay), order received, mini cart, promo bars |
 | `woocommerce-my-account` | account frames, orders as cards, order receipt, addresses, three login designs, order tracking |
 
+## License
+
+MIT, see [LICENSE](plugins/builder-kit/LICENSE).
+
