@@ -49,24 +49,24 @@ env = { WP_API_URL = "https://example.com/wp-json/oxygen/mcp", WP_API_USERNAME =
 **Any agent, with the skills CLI** (Claude Code, Codex, Cursor, Copilot, Windsurf, Gemini CLI and the rest of the agents [skills.sh](https://skills.sh) supports)
 
 ```bash
-npx skills add soflyy/builder-kit          # into this project, symlinked per agent
-npx skills add soflyy/builder-kit -g       # into the user's home directory instead
-npx skills add soflyy/builder-kit --list   # see the skills without installing
+npx skills add soflyy/skills          # into this project, symlinked per agent
+npx skills add soflyy/skills -g       # into the user's home directory instead
+npx skills add soflyy/skills --list   # see the skills without installing
 ```
 
-This installs the skills only (no plugin manifest and no bundled MCP server): the agent reads them from its own skills folder and triggers them from the user's words exactly as it would from the installed plugin. Add the Playwright MCP server yourself if you want the browser checks (see below). `npx skills update` refreshes them later. To install one skill or target one agent: `npx skills add soflyy/builder-kit --skill woocommerce-store -a claude-code`.
+This installs the skills only (no plugin manifest and no bundled MCP server): the agent reads them from its own skills folder and triggers them from the user's words exactly as it would from the installed plugin. Add the Playwright MCP server yourself if you want the browser checks (see below). `npx skills update` refreshes them later. To install one skill or target one agent: `npx skills add soflyy/skills --skill woocommerce-store -a claude-code`.
 
 **Claude Code** (plugin marketplace)
 
 ```
-/plugin marketplace add soflyy/builder-kit
+/plugin marketplace add soflyy/skills
 /plugin install builder-kit@soflyy
 ```
 
 **Codex CLI**
 
 ```bash
-codex plugin marketplace add soflyy/builder-kit
+codex plugin marketplace add soflyy/skills
 ```
 
 then install `builder-kit` from the Plugins directory (or `codex plugin install builder-kit`).
