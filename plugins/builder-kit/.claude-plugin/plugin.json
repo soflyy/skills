@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "builder-kit",
+  "displayName": "Oxygen 6 & Breakdance Builder Kit",
+  "homepage": "https://oxygenbuilder.com",
+  "description": "Teaches your agent how to build sites and complete WooCommerce stores with Oxygen 6 or Breakdance: pages, templates, dynamic data, shop and product pages, cart, checkout and account.",
+  "version": "0.4.0",
+  "author": {
+    "name": "Soflyy"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "builder-kit",
+  "version": "0.4.0",
+  "description": "Teaches your agent how to build sites and complete WooCommerce stores with Oxygen 6 or Breakdance: pages, templates, dynamic data, shop and product pages, cart, checkout and account.",
+  "author": {
+    "name": "Soflyy",
+    "url": "https://oxygenbuilder.com"
+  },
+  "homepage": "https://oxygenbuilder.com",
+  "license": "UNLICENSED",
+  "keywords": [
+    "oxygen",
+    "breakdance",
+    "wordpress",
+    "woocommerce",
+    "page-builder"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Oxygen 6 & Breakdance Builder Kit",
+        "shortDescription": "Build sites and WooCommerce stores with Oxygen 6 or Breakdance through their MCP tools.",
+        "longDescription": "Teaches your agent how to build sites and complete WooCommerce stores with Oxygen 6 or Breakdance: pages, templates, dynamic data, shop and product pages, cart, checkout and account. Connect your own site's MCP endpoint; this plugin ships the skills only.",
+        "developerName": "Soflyy",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://oxygenbuilder.com",
+        "defaultPrompt": [
+          "Build my WooCommerce store",
+          "Design my product page",
+          "Create a landing page for my product"
+        ]
+      }
+    }
+  }
+}

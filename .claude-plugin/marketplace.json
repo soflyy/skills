@@ -1,0 +1,18 @@
+{
+  "name": "soflyy",
+  "owner": {
+    "name": "Soflyy"
+  },
+  "metadata": {
+    "description": "Skills that teach Claude Code how to build sites and WooCommerce stores with the Oxygen 6 and Breakdance builder MCP tools."
+  },
+  "plugins": [
+    {
+      "name": "builder-kit",
+      "source": "./plugins/builder-kit",
+      "description": "Teaches your agent how to build sites and complete WooCommerce stores with Oxygen 6 or Breakdance: pages, templates, dynamic data, shop and product pages, cart, checkout and account.",
+      "version": "0.4.0",
+      "category": "productivity"
+    }
+  ]
+}
