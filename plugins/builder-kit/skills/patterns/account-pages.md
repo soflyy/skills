@@ -91,6 +91,8 @@ Use when: most stores. The welcome band is bound to the logged-in user; the elem
   .acct-intro { margin: 0; color: var(--ink-muted); font: 15px/1.5 var(--font-body); }
   /* the element's two blocks as a sidebar grid */
   .account .bde-woopageaccount .woocommerce { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 56px; align-items: start; }
+  /* WooCommerce clearfixes this wrapper with ::before/::after { content: " "; display: table }; in a grid they are cells and push the nav into the second column */
+  .account .bde-woopageaccount .woocommerce::before, .account .bde-woopageaccount .woocommerce::after { content: none; }
   .account nav.woocommerce-MyAccount-navigation { width: auto; min-width: 0; position: sticky; top: calc(var(--wp-admin--admin-bar--height, 0px) + 96px); }
   .account .woocommerce-MyAccount-content { width: auto; flex: none; }
   .account nav.woocommerce-MyAccount-navigation ul { display: grid; gap: 4px; list-style: none; margin: 0; padding: 0; }
@@ -146,6 +148,7 @@ Use when: 4 to 6 endpoints and a simple catalog. Underlined tabs in a row, conte
   .account.account--tabs .container--narrow { max-width: 880px; }
   .account.account--tabs .acct-title { margin: 0 0 24px; font: 600 32px/1.1 var(--font-display); }
   .account.account--tabs .bde-woopageaccount .woocommerce { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .account.account--tabs .bde-woopageaccount .woocommerce::before, .account.account--tabs .bde-woopageaccount .woocommerce::after { content: none; }
   .account.account--tabs nav.woocommerce-MyAccount-navigation { width: auto; min-width: 0; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
   .account.account--tabs nav.woocommerce-MyAccount-navigation ul { display: flex; flex-direction: row; gap: 28px; list-style: none; margin: 0; padding: 0; width: max-content; min-width: 100%; }
   .account.account--tabs .woocommerce-MyAccount-navigation ul li { display: block; }

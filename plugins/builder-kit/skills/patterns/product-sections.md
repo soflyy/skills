@@ -186,6 +186,7 @@ Use when: the product is part of a set, or the store sells accessories for it. T
   .ps-look-all:hover { color: var(--ink); }
   .ps-look-row:not(:has(*)) { display: none; }
   .ps-look-row ul.products { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 24px; list-style: none; margin: 0; padding: 0; }
+  .ps-look-row .upsells ul.products::before, .ps-look-row .upsells ul.products::after { content: none; }
   .ps-look-row ul.products li.product img { width: 100%; aspect-ratio: var(--card-ratio); object-fit: cover; border-radius: var(--radius); background: var(--surface-alt); }
   .ps-look-row ul.products li.product h2 { margin: 12px 0 4px; font: 500 15px/1.3 var(--font-body); }
   /* the builder styles the amount on the inner <bdi>, not the .price span, at .breakdance-woocommerce

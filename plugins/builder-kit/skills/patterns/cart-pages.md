@@ -363,6 +363,7 @@ WooCommerce's cross-sells markup is its loop (`ul.products > li.product`), not y
 .cart-page .cross-sells { margin-top: 0; }
 .cart-page .cross-sells h2 { font: 600 24px/1.2 var(--font-display); margin: 0 0 24px; }
 .cart-page .cross-sells ul.products { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.cart-page .cross-sells ul.products::before, .cart-page .cross-sells ul.products::after { content: none; }
 .cart-page .cross-sells li.product { display: grid; gap: 8px; margin: 0; }
 .cart-page .cross-sells li.product a img { width: 100%; aspect-ratio: var(--card-ratio); object-fit: cover; border-radius: var(--radius); }
 .cart-page .cross-sells .woocommerce-loop-product__title { font: 500 15px/1.3 var(--font-body); color: var(--ink); margin: 0; }
