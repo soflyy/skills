@@ -97,5 +97,5 @@ To watch it run headed instead (for example, to debug it yourself), drop `--head
 
 ## License
 
-MIT, see [LICENSE](plugins/builder-kit/LICENSE).
+GPL-2.0-or-later, see [LICENSE](plugins/builder-kit/LICENSE).
 
